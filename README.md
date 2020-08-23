@@ -3,7 +3,8 @@ Doing leetcode problems for preparing interview.
 
 ## Day 1 (5/24/2020) Double Pointer
 ### #167 Two Sum II (Easy https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
-```##python
+```python
+##python solution
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         i = 0
@@ -17,7 +18,8 @@ class Solution:
         return [ ]
 ```
 
-```##java
+```java
+##java solution
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
         if(numbers == null) return null;
@@ -38,7 +40,8 @@ class Solution {
 ```
 
 ### #633 Sum of Square Numbers (Easy https://leetcode.com/problems/sum-of-square-numbers/)
-```##python
+```python
+##python solution
 class Solution:
     def judgeSquareSum(self, c: int) -> bool:
         a = 0
@@ -49,7 +52,8 @@ class Solution:
         return False
 ```
 
-```##java
+```java
+##java solution
 class Solution {
      public boolean judgeSquareSum(int target) {
          if (target < 0) return false;
