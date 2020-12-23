@@ -97,7 +97,7 @@ class Solution:
 
 
 ## Day 3 (5/30/2020)
-### #88 Merge Sorted Array (Easy https://leetcode.com/problems/reverse-vowels-of-a-string/)
+### #88 Merge Sorted Array (Easy https://leetcode.com/problems/merge-sorted-array/)
 ```python
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
