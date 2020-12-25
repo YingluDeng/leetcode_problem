@@ -130,6 +130,37 @@ class Solution:
         return True
 ```
 
+## Day 5 (12/25/2020) 
+### #141 Assign Cookies (Easy https://leetcode.com/problems/third-maximum-number/)
+```python
+class Solution:
+    def hasCycle(self, head: ListNode) -> bool:
+        try:
+            slow = head
+            fast = head.next
+            while slow is not fast:
+                slow = slow.next
+                fast = fast.next.next
+            return True
+        except:
+            return False
+```
+
+### #524 Longest Word in Dictionary through Deleting (Medium https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/)
+```python
+class Solution:
+    def findLongestWord(self, s:str, d:List[str]) -> str:
+        d.sort(key = lambda x: (-len(x), x))
+        for word in d:
+            i = 0
+            for c in s:
+                if i < len(word) & c == word[i]:
+                    i += 1
+            if i == len(word):
+                return word
+        return ""       
+```        
+
 ## Day 4 (6/24/2020) Greedy Thinking
 ### #455 Assign Cookies (Easy https://leetcode.com/problems/assign-cookies/)
 ```python
