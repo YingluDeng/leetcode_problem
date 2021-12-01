@@ -18,24 +18,6 @@ class Solution:
         return [ ]
 ```
 
-
-```python
-##python solution
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        d = {nums[0]:0}                 //create a dict and put the 0 index in the dict
-        for i in range(1, len(nums)):   //loop for the nums length
-            rem = target - nums[i]      //get the rem and find it in the dict
-            if rem in d:
-                return d[rem], i      //return the current rem index and current index
-            else:
-                d[nums[i]] = i     //store the current index and its item into dict
-         
-        
-        
-        //dict -- "nums item" : "nums index"
-```
-
 ```java
 ##java solution
 class Solution {
@@ -196,6 +178,25 @@ class Solution:
         return child    
 ```
 
+
+## Day 5 (12/1/2021) Hash
+### #1 Two Sum (Easy https://leetcode.com/problems/two-sum/)
+```python
+##python solution
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        d = {nums[0]:0}                 //create a dict and put the 0 index in the dict
+        for i in range(1, len(nums)):   //loop for the nums length
+            rem = target - nums[i]      //get the rem and find it in the dict
+            if rem in d:
+                return d[rem], i      //return the current rem index and current index
+            else:
+                d[nums[i]] = i     //store the current index and its item into dict
+         
+        
+        
+        //dict -- "nums item" : "nums index"
+```
 
 
                 
